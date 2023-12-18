@@ -1,4 +1,3 @@
-// components/Item.js
 import { useState } from "react";
 
 const Item = ({ name, children }) => {
@@ -11,6 +10,7 @@ const Item = ({ name, children }) => {
   return (
     <div>
       <div onClick={toggleOpen}>{name}</div>
+
       <div className="bg-orange-400">{isOpen && children}</div>
     </div>
   );
